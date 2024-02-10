@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
 {
+    public Transform playerTransform;
     public List<Floor> floors; // Список всех этажей с пресетами
     public GameObject startRoomPrefab;
     public GameObject bossRoomPrefab;
@@ -19,11 +20,6 @@ public class LevelGenerator : MonoBehaviour
 
     public void OpenNextRoom()
     {
-        if (currentRoomPrefab != null)
-        {
-            Destroy(currentRoomPrefab.gameObject); // Удаляем предыдущую комнату
-        }
-
         currentFloor++; // Переходим к следующему этажу
 
         GameObject roomPrefab;
@@ -41,12 +37,18 @@ public class LevelGenerator : MonoBehaviour
             // Выбираем случайную комнату для обычного этажа, учитывая, что первый и последний этажи уже заняты
             roomPrefab = floors[currentFloor - 2].GetRandomRoomPrefab();
         }
-    
+
+        if (roomPrefab != null && currentRoomPrefab != null)
+        {
+            Destroy(currentRoomPrefab.gameObject); // Удаляем предыдущую комнату
+        }
+
         GameObject spawnedRoom = Instantiate(roomPrefab, new Vector3(0, 0, 0), Quaternion.identity);
 
         if (spawnedRoom != null)
         {
             currentRoomPrefab = spawnedRoom.GetComponent<ConcreteRoom>();
+            currentRoomPrefab.player = playerTransform;
             currentRoomPrefab.InitializeRoom();
         }
     }

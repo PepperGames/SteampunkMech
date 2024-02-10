@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ConcreteRoom : MonoBehaviour
 {
+    public Transform player;
+    public Transform[] spawnPositions;
+
     
     public void InitializeRoom()
     {
@@ -15,7 +18,25 @@ public class ConcreteRoom : MonoBehaviour
 
     public void SpawnPlayer()
     {
-        Debug.Log("SpawnPlayer");
+        if (spawnPositions == null || spawnPositions.Length == 0)
+        {
+            Debug.LogError("Spawn positions are not set for " + gameObject.name);
+            return;
+        }
+
+        // Выбираем случайную позицию из доступных
+        int randomIndex = UnityEngine.Random.Range(0, spawnPositions.Length);
+        Transform spawnPoint = spawnPositions[randomIndex];
+
+        // Перемещаем игрока на выбранную позицию
+        if (player != null)
+        {
+            player.transform.position = spawnPoint.position;
+        }
+        else
+        {
+            Debug.LogError("Player object not found");
+        }
     }
     
     public void SpawnEnemies()

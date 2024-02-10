@@ -8,6 +8,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/1. PROJECT/1. Scripts/Common/PauseListenerUnityEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1. PROJECT/1. Scripts/Common/PauseManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1. PROJECT/1. Scripts/Dungeon/ConcreteRoom.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/LevelGeneratorEditor.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -67,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707577828562</updated>
-      <workItem from="1707577840288" duration="1915000" />
+      <workItem from="1707577840288" duration="3459000" />
     </task>
     <servers />
   </component>
