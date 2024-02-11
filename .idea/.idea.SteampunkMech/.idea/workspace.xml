@@ -8,9 +8,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/1. PROJECT/1. Scripts/Common/ConstantsHolder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1. PROJECT/1. Scripts/Common/PauseListenerUnityEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1. PROJECT/1. Scripts/Common/PauseManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1. PROJECT/1. Scripts/Dungeon/ConcreteRoom.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1. PROJECT/1. Scripts/SaveLoadSystem/GameplaySaveLoadProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1. PROJECT/1. Scripts/SaveLoadSystem/SaveLoadManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/LevelGeneratorEditor.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -70,7 +73,8 @@
       <option name="presentableId" value="Default" />
       <updated>1707577828562</updated>
       <workItem from="1707577840288" duration="3594000" />
-      <workItem from="1707586849208" duration="1531000" />
+      <workItem from="1707586849208" duration="2199000" />
+      <workItem from="1707636345769" duration="2341000" />
     </task>
     <servers />
   </component>
