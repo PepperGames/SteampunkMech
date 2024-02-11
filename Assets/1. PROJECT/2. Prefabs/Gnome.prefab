@@ -132,7 +132,7 @@ Transform:
   m_GameObject: {fileID: 1009199716876226293}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.61, z: 0.292}
+  m_LocalPosition: {x: 0, y: 1.61, z: 0.353}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -329,7 +329,7 @@ MonoBehaviour:
   jumpCooldown: 0
   airMultiplier: 2
   crouchSpeed: 4
-  crouchYScale: 2
+  crouchYScale: -2
   jumpKey: 32
   sprintKey: 304
   crouchKey: 306
@@ -604,7 +604,7 @@ Transform:
   m_GameObject: {fileID: 6310149902470949190}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.56, z: 0.292}
+  m_LocalPosition: {x: 0, y: 1.56, z: 0.353}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

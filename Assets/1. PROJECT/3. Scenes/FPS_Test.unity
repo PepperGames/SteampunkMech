@@ -1282,6 +1282,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5015733448780574450, guid: 8a8c75627f0d30b458103bba02917b0b,
+        type: 3}
+      propertyPath: crouchYScale
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5018284579557329497, guid: 8a8c75627f0d30b458103bba02917b0b,
         type: 3}
       propertyPath: m_Name
