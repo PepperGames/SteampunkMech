@@ -69,7 +69,7 @@ public class ConcreteRoom : MonoBehaviour
             if (spawnPosition != Vector3.zero) // Проверяем, что мы нашли действительное место для спавна
             {
                 GameObject selectedPrefab = prefabs[UnityEngine.Random.Range(0, prefabs.Length)];
-                Instantiate(selectedPrefab, spawnPosition, Quaternion.identity, transform);
+                Instantiate(selectedPrefab, spawnPosition, Quaternion.identity);
                 spawnedPositions.Add(spawnPosition);
             }
             else

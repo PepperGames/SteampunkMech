@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 430350}
   - component: {fileID: 3319334}
   - component: {fileID: 2384486}
+  - component: {fileID: -8657991745562257623}
   m_Layer: 0
   m_Name: SM_Env_Gem_Spike_02
   m_TagString: Untagged
@@ -83,3 +84,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-8657991745562257623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3e8b26fa9db924e84835b8833b5ea6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  suitableSurfaceLayer:
+    serializedVersion: 2
+    m_Bits: 16
+  searchRadius: 5
