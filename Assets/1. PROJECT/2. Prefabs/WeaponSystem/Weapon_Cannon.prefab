@@ -219,9 +219,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponData: {fileID: 11400000, guid: a8c6996b45e3afa4a900eedbd2c94919, type: 2}
-  bulletSpeed: 1000
-  bulletSpawnPoint: {fileID: 340143519121244924}
-  bulletPool: {fileID: 414201487140926719}
   OnFireEvent:
     m_PersistentCalls:
       m_Calls:
@@ -237,6 +234,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnReloadStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnReloadFinishEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  bulletSpeed: 2200
+  bulletSpawnPoint: {fileID: 340143519121244924}
+  bulletPool: {fileID: 414201487140926719}
 --- !u!114 &414201487140926719
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -8,7 +8,7 @@ public class TESTCannonWeapon : BaseWeapon
     public float bulletSpeed = 1000;
     public Transform bulletSpawnPoint;
     public ObjectPool bulletPool;
-    public UnityEvent OnFireEvent;
+    
 
     protected override void Start()
     {
@@ -35,4 +35,6 @@ public class TESTCannonWeapon : BaseWeapon
         ResetAttackTimer();
         OnFireEvent.Invoke();
     }
+    
+    
 }

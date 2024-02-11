@@ -16,6 +16,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/1. PROJECT/1. Scripts/Dungeon/ConcreteRoom.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1. PROJECT/1. Scripts/SaveLoadSystem/GameplaySaveLoadProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1. PROJECT/1. Scripts/SaveLoadSystem/SaveLoadManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/1. PROJECT/1. Scripts/WeaponSystem/MechPartsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1. PROJECT/1. Scripts/WeaponSystem/WeaponData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/1. PROJECT/1. Scripts/WeaponSystem/Weapons/TESTCannonWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/LevelGeneratorEditor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -78,7 +79,7 @@
       <updated>1707577828562</updated>
       <workItem from="1707577840288" duration="3594000" />
       <workItem from="1707586849208" duration="2199000" />
-      <workItem from="1707636345769" duration="9142000" />
+      <workItem from="1707636345769" duration="11490000" />
     </task>
     <servers />
   </component>

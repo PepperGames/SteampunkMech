@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public interface IWeapon
 {
@@ -10,11 +11,15 @@ public interface IWeapon
 public abstract class BaseWeapon : MonoBehaviour, IWeapon
 {
     public WeaponData weaponData;
+    public UnityEvent OnFireEvent;
+    public UnityEvent OnReloadStartEvent;
+    public UnityEvent OnReloadFinishEvent;
 
     protected float lastAttackTime;
     protected float reloadStartTime;
     protected int currentAmmo;
     protected bool isReloading;
+    
 
     protected virtual void Start()
     {
@@ -54,6 +59,7 @@ public abstract class BaseWeapon : MonoBehaviour, IWeapon
         isReloading = true;
         reloadStartTime = Time.time;
         // Дополнительная логика при начале перезарядки (например, анимация)
+        OnReloadStartEvent.Invoke();
     }
 
     protected void FinishReload()
@@ -61,6 +67,7 @@ public abstract class BaseWeapon : MonoBehaviour, IWeapon
         isReloading = false;
         currentAmmo = weaponData.ammo;
         // Дополнительная логика при завершении перезарядки
+        OnReloadFinishEvent.Invoke();
     }
 
     public abstract void Fire();
